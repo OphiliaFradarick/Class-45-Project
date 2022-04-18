@@ -9,10 +9,10 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 
 	database = firebase.database();
+
 	game = new Game();
-	game.start();
-
-
+	form = new Form();
+	form.display()
 
 }
 
@@ -25,7 +25,7 @@ function draw() {
 
 }
 
-function windowResized(){
+function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
 
